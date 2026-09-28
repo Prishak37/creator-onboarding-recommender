@@ -16,7 +16,7 @@ st.set_page_config(page_title="Creator Onboarding Recommender", layout="wide")
 
 @st.cache_data
 def load_data():
-    df = pd.read_csv("creators_scored.csv")
+    df = pd.read_csv(r"Influencer recommender csv.csv")
     return df
 
 df = load_data()
